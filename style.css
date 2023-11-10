@@ -1,0 +1,54 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mobile-dropdown {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    display: none; /* Het blokje is standaard verborgen voor desktop-weergave */
+}
+
+/* Media queries voor responsive design */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Verberg de standaard navigatielinks voor mobiele weergave */
+    }
+
+    .mobile-dropdown {
+        display: block; /* Laat het blokje zien voor mobiele weergave */
+    }
+}
